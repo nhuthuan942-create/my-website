@@ -1,0 +1,1114 @@
+<!DOCTYPE html>
+<!-- saved from url=(0050)file:///C:/Users/admin/Desktop/index.html#tac-dong -->
+<html lang="vi"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Phòng chống bạo lực học đường - Xây dựng môi trường học tập lành mạnh, an toàn và văn minh cho tất cả mọi người.">
+  <title>Phòng Chống Bạo Lực Học Đường | Môi Trường Học Tập Lành Mạnh</title>
+  <style>
+    /* ==========================================================================
+       1. BRAND VARIABLES & RESET (MÀU PHẲNG TUYỆT ĐỐI - KHÔNG GRADIENT)
+       ========================================================================== */
+    :root {
+      --bg-main: #FFFFFF;
+      --bg-subtle: #F4F6F9;
+      --text-primary: #2C2A2B;
+      --text-muted: #555254;
+      --brand-navy: #000056;
+      --brand-red: #E31F26;
+      --brand-red-hover: #C7161C;
+      --border-light: #E2E5EC;
+      --container-max: 1120px;
+      --radius-sm: 6px;
+      --radius-md: 10px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+      overflow-x: hidden;
+    }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background-color: var(--bg-main);
+      color: var(--text-primary);
+      line-height: 1.65;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    /* ==========================================================================
+       2. LAYOUT & TYPOGRAPHY UTILITIES
+       ========================================================================== */
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    section {
+      padding: 68px 0;
+    }
+
+    .section-alt {
+      background-color: var(--bg-subtle);
+    }
+
+    .section-header {
+      text-align: center;
+      max-width: 720px;
+      margin: 0 auto 44px auto;
+    }
+
+    .section-title {
+      color: var(--brand-navy);
+      font-size: 1.9rem;
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      letter-spacing: -0.02em;
+    }
+
+    .section-desc {
+      color: var(--text-muted);
+      font-size: 1.05rem;
+    }
+
+    /* Nút bấm CTA chính duy nhất theo Brand Guideline */
+    .btn-cta {
+      display: inline-block;
+      background-color: var(--brand-red);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 16px 32px;
+      border-radius: var(--radius-sm);
+      border: none;
+      cursor: pointer;
+      text-align: center;
+      line-height: 1.4;
+      box-shadow: 0 2px 6px rgba(227, 31, 38, 0.22);
+      transition: all 0.3s ease;
+    }
+
+    .btn-cta:hover {
+      background-color: var(--brand-red-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 16px rgba(199, 22, 28, 0.32);
+    }
+
+    .btn-cta:active {
+      transform: translateY(0);
+    }
+
+    /* ==========================================================================
+       3. NAVIGATION BAR (MÀU XANH CÔNG NGHỆ #000056 - FLAT COLOR)
+       ========================================================================== */
+    .navbar {
+      background-color: var(--brand-navy);
+      color: #FFFFFF;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 68px;
+      gap: 12px;
+    }
+
+    .brand-logo {
+      font-weight: 800;
+      font-size: 1.1rem;
+      letter-spacing: 0.02em;
+      color: #FFFFFF;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      line-height: 1.3;
+    }
+
+    .brand-badge {
+      flex-shrink: 0;
+      display: inline-block;
+      width: 12px;
+      height: 12px;
+      background-color: var(--brand-red);
+      border-radius: 2px;
+    }
+
+    .nav-links {
+      display: flex;
+      list-style: none;
+      gap: 28px;
+    }
+
+    .nav-links a {
+      color: #FFFFFF;
+      font-size: 0.95rem;
+      font-weight: 600;
+      transition: opacity 0.25s ease;
+    }
+
+    .nav-links a:hover {
+      opacity: 0.85;
+      text-decoration: underline;
+      text-underline-offset: 6px;
+    }
+
+    .menu-toggle {
+      display: none;
+      flex-shrink: 0;
+      background-color: transparent;
+      border: 1px solid rgba(255, 255, 255, 0.45);
+      color: #FFFFFF;
+      padding: 6px 12px;
+      border-radius: 4px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    /* ==========================================================================
+       SECTION 1: HERO SECTION
+       ========================================================================== */
+    .hero {
+      padding: 76px 0 84px 0;
+      background-color: var(--bg-main);
+      border-bottom: 1px solid var(--border-light);
+    }
+
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      gap: 48px;
+      align-items: center;
+    }
+
+    .hero-eyebrow {
+      display: inline-block;
+      color: var(--brand-navy);
+      background-color: var(--bg-subtle);
+      font-weight: 700;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      padding: 6px 12px;
+      border-radius: 4px;
+      margin-bottom: 18px;
+    }
+
+    .hero-title {
+      color: var(--brand-navy);
+      font-size: 2.65rem;
+      font-weight: 800;
+      line-height: 1.18;
+      margin-bottom: 20px;
+      letter-spacing: -0.025em;
+    }
+
+    .hero-subtitle {
+      color: var(--text-primary);
+      font-size: 1.12rem;
+      margin-bottom: 32px;
+      max-width: 580px;
+    }
+
+    .hero-illustration {
+      background-color: var(--bg-subtle);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 32px 28px;
+    }
+
+    .pillar-summary {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    .pillar-summary li {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      background-color: #FFFFFF;
+      padding: 14px 16px;
+      border-radius: var(--radius-sm);
+      border-left: 4px solid var(--brand-navy);
+      font-weight: 600;
+      color: var(--brand-navy);
+      font-size: 0.96rem;
+    }
+
+    .pillar-dot {
+      flex-shrink: 0;
+      width: 10px;
+      height: 10px;
+      background-color: var(--brand-red);
+      border-radius: 50%;
+    }
+
+    /* ==========================================================================
+       SECTION 2: THE PROBLEM (3 GẠCH ĐẦU DÒNG NGẮN GỌN)
+       ========================================================================== */
+    .problem-box {
+      max-width: 820px;
+      margin: 0 auto;
+      background-color: var(--bg-main);
+      border: 1px solid var(--border-light);
+      border-left: 5px solid var(--brand-navy);
+      border-radius: var(--radius-md);
+      padding: 36px 40px;
+    }
+
+    .problem-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 22px;
+    }
+
+    .problem-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      font-size: 1.06rem;
+    }
+
+    .problem-bullet {
+      flex-shrink: 0;
+      width: 28px;
+      height: 28px;
+      background-color: var(--brand-navy);
+      color: #FFFFFF;
+      font-weight: 700;
+      font-size: 0.9rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 2px;
+    }
+
+    /* ==========================================================================
+       SECTION 3: THE OFFER / FEATURES (3 THẺ KHỐI CARDS - HOVER NỔI & ĐỔ BÓNG)
+       ========================================================================== */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .feature-card {
+      background-color: var(--bg-main);
+      border: 1px solid var(--border-light);
+      border-top: 4px solid var(--brand-navy);
+      border-radius: var(--radius-md);
+      padding: 32px 26px;
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .feature-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 24px rgba(0, 0, 86, 0.08);
+      border-color: #C7D0E0;
+    }
+
+    .card-tag {
+      font-size: 0.8rem;
+      font-weight: 700;
+      color: var(--brand-red);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      margin-bottom: 10px;
+    }
+
+    .card-title {
+      color: var(--brand-navy);
+      font-size: 1.3rem;
+      font-weight: 700;
+      margin-bottom: 14px;
+      line-height: 1.35;
+    }
+
+    .card-text {
+      color: var(--text-primary);
+      font-size: 0.98rem;
+    }
+
+    /* ==========================================================================
+       SECTION 4: SOCIAL PROOF (3 CON SỐ THỐNG KÊ / NHẬN XÉT)
+       ========================================================================== */
+    .proof-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .proof-card {
+      background-color: var(--bg-main);
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-md);
+      padding: 32px 24px;
+      text-align: center;
+    }
+
+    .stat-number {
+      color: var(--brand-navy);
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 10px;
+    }
+
+    .stat-label {
+      font-weight: 700;
+      font-size: 1.05rem;
+      color: var(--text-primary);
+      margin-bottom: 8px;
+    }
+
+    .stat-sub {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+    }
+
+    /* ==========================================================================
+       SECTION 5: FAQ (4 CÂU HỎI THƯỜNG GẶP - ACCORDION)
+       ========================================================================== */
+    .faq-list {
+      max-width: 820px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+    }
+
+    .faq-item {
+      border: 1px solid var(--border-light);
+      border-radius: var(--radius-sm);
+      background-color: var(--bg-main);
+      overflow: hidden;
+    }
+
+    .faq-question {
+      width: 100%;
+      background-color: var(--bg-main);
+      color: var(--brand-navy);
+      font-weight: 700;
+      font-size: 1.04rem;
+      text-align: left;
+      padding: 20px 22px;
+      border: none;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 14px;
+      line-height: 1.4;
+      transition: background-color 0.2s ease;
+    }
+
+    .faq-question:hover {
+      background-color: var(--bg-subtle);
+    }
+
+    .faq-icon {
+      flex-shrink: 0;
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--brand-navy);
+      transition: transform 0.25s ease;
+    }
+
+    .faq-item.active .faq-icon {
+      transform: rotate(45deg);
+    }
+
+    .faq-answer {
+      display: none;
+      padding: 14px 22px 20px 22px;
+      color: var(--text-primary);
+      font-size: 0.98rem;
+      border-top: 1px solid var(--bg-subtle);
+    }
+
+    .faq-item.active .faq-answer {
+      display: block;
+    }
+
+    /* ==========================================================================
+       SECTION 6: FINAL CTA & FOOTER
+       ========================================================================== */
+    .final-cta-section {
+      background-color: var(--bg-subtle);
+      border-top: 1px solid var(--border-light);
+      text-align: center;
+      padding: 72px 20px;
+    }
+
+    .final-cta-title {
+      color: var(--brand-navy);
+      font-size: 2rem;
+      font-weight: 800;
+      margin-bottom: 16px;
+      max-width: 700px;
+      margin-left: auto;
+      margin-right: auto;
+      line-height: 1.25;
+    }
+
+    .final-cta-desc {
+      color: var(--text-primary);
+      max-width: 600px;
+      margin: 0 auto 30px auto;
+      font-size: 1.05rem;
+    }
+
+    .footer {
+      background-color: var(--brand-navy);
+      color: #FFFFFF;
+      padding: 44px 0 32px 0;
+      font-size: 0.92rem;
+    }
+
+    .footer-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 28px;
+      padding-bottom: 28px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    }
+
+    .footer-col {
+      max-width: 480px;
+    }
+
+    .footer-col h4 {
+      font-size: 1.05rem;
+      margin-bottom: 10px;
+      color: #FFFFFF;
+    }
+
+    .footer-col p {
+      color: rgba(255, 255, 255, 0.92);
+      margin-bottom: 6px;
+    }
+
+    .footer-bottom {
+      padding-top: 20px;
+      text-align: center;
+      color: rgba(255, 255, 255, 0.85);
+      font-size: 0.85rem;
+    }
+
+    /* ==========================================================================
+       MODAL HỖ TRỢ / HÀNH ĐỘNG NHANH KHI BẤM CTA
+       ========================================================================== */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      inset: 0;
+      background-color: rgba(0, 0, 50, 0.65);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 16px;
+    }
+
+    .modal-overlay.open {
+      display: flex;
+    }
+
+    .modal-box {
+      background-color: #FFFFFF;
+      width: 100%;
+      max-width: 500px;
+      max-height: 92vh;
+      overflow-y: auto;
+      border-radius: var(--radius-md);
+      padding: 28px 24px;
+      border-top: 6px solid var(--brand-red);
+      position: relative;
+    }
+
+    .modal-close {
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      background: none;
+      border: none;
+      font-size: 1.6rem;
+      line-height: 1;
+      color: var(--text-muted);
+      cursor: pointer;
+    }
+
+    .modal-title {
+      color: var(--brand-navy);
+      font-size: 1.32rem;
+      font-weight: 800;
+      margin-bottom: 10px;
+      padding-right: 24px;
+    }
+
+    .form-group {
+      margin-bottom: 14px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.9rem;
+      margin-bottom: 5px;
+      color: var(--brand-navy);
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 1px solid #C5CCD8;
+      border-radius: 4px;
+      font-family: inherit;
+      font-size: 0.95rem;
+      color: var(--text-primary);
+      background-color: #FFFFFF;
+    }
+
+    .form-feedback {
+      display: none;
+      margin-top: 14px;
+      padding: 12px;
+      background-color: var(--bg-subtle);
+      border-left: 4px solid var(--brand-navy);
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--brand-navy);
+    }
+
+    /* ==========================================================================
+       RESPONSIVE MOBILE FIRST ADJUSTMENTS (TỐI ƯU CHUẨN 375PX & DI ĐỘNG)
+       ========================================================================== */
+    @media (max-width: 900px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        gap: 32px;
+      }
+
+      .hero-title {
+        font-size: 2.15rem;
+      }
+
+      .cards-grid,
+      .proof-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 680px) {
+      .container {
+        padding: 0 16px;
+      }
+
+      section {
+        padding: 48px 0;
+      }
+
+      .hero {
+        padding: 48px 0 56px 0;
+      }
+
+      .brand-logo {
+        font-size: 0.95rem;
+        gap: 8px;
+      }
+
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 68px;
+        left: 0;
+        right: 0;
+        background-color: var(--brand-navy);
+        padding: 20px 16px;
+        gap: 16px;
+        border-top: 1px solid rgba(255, 255, 255, 0.16);
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hero-title {
+        font-size: 1.78rem;
+      }
+
+      .hero-subtitle {
+        font-size: 1.02rem;
+      }
+
+      .section-title,
+      .final-cta-title {
+        font-size: 1.55rem;
+      }
+
+      .btn-cta {
+        width: 100%;
+        padding: 15px 18px;
+        font-size: 0.96rem;
+      }
+
+      .problem-box {
+        padding: 22px 18px;
+      }
+
+      .problem-item {
+        font-size: 0.98rem;
+        gap: 12px;
+      }
+
+      .feature-card,
+      .proof-card {
+        padding: 24px 20px;
+      }
+
+      .stat-number {
+        font-size: 2.1rem;
+      }
+
+      .faq-question {
+        padding: 16px 18px;
+        font-size: 0.98rem;
+      }
+
+      .faq-answer {
+        padding: 12px 18px 18px 18px;
+        font-size: 0.94rem;
+      }
+    }
+
+    @media (max-width: 390px) {
+      .brand-logo {
+        font-size: 0.88rem;
+      }
+
+      .hero-title {
+        font-size: 1.62rem;
+      }
+
+      .btn-cta {
+        font-size: 0.92rem;
+        padding: 14px 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- THANH ĐIỀU HƯỚNG (MÀU XANH CÔNG NGHỆ #000056) -->
+  <header class="navbar">
+    <div class="container nav-container">
+      <a href="file:///C:/Users/admin/Desktop/index.html#" class="brand-logo">
+        <span class="brand-badge"></span>
+        <span>PHÒNG CHỐNG BẠO LỰC HỌC ĐƯỜNG</span>
+      </a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Mở menu">Menu ☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="file:///C:/Users/admin/Desktop/index.html#thuc-trang">Thực trạng</a></li>
+        <li><a href="file:///C:/Users/admin/Desktop/index.html#giai-phap">Giải pháp</a></li>
+        <li><a href="file:///C:/Users/admin/Desktop/index.html#tac-dong">Tác động</a></li>
+        <li><a href="file:///C:/Users/admin/Desktop/index.html#hoi-dap">Hỏi đáp</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main>
+    <!-- ======================================================================
+         1. HERO SECTION
+         ====================================================================== -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-eyebrow">Sáng kiến cộng đồng vì giáo dục an toàn</span>
+          <h1 class="hero-title">Chung Tay Phòng Chống Bạo Lực Học Đường Ngay Hôm Nay</h1>
+          <p class="hero-subtitle">
+            Kết nối nhà trường, gia đình và toàn xã hội để nhận diện sớm, ngăn chặn kịp thời mọi hành vi tổn thương và kiến tạo không gian học tập tôn trọng cho tất cả mọi người.
+          </p>
+          <!-- DUY NHẤT 1 NÚT CTA CHÍNH -->
+          <button type="button" class="btn-cta open-cta-modal">
+            phong chong bao luc hoc duong, xay dung moi truong hoc tap lanh manh
+          </button>
+        </div>
+
+        <div class="hero-illustration" aria-label="Giá trị cốt lõi của dự án">
+          <ul class="pillar-summary">
+            <li>
+              <span class="pillar-dot"></span>
+              <span>Lắng nghe an toàn &amp; bảo mật tuyệt đối</span>
+            </li>
+            <li>
+              <span class="pillar-dot"></span>
+              <span>Can thiệp tâm lý sớm trong 24 giờ</span>
+            </li>
+            <li>
+              <span class="pillar-dot"></span>
+              <span>Đồng hành giữa Gia đình - Nhà trường - Xã hội</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         2. THE PROBLEM (3 GẠCH ĐẦU DÒNG NGẮN GỌN)
+         ====================================================================== -->
+    <section id="thuc-trang" class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Những Rào Cản Khiến Bạo Lực Học Đường Vẫn Tồn Tại</h2>
+          <p class="section-desc">Bạo lực không chỉ là tác động thể chất mà còn là sự cô lập tinh thần và bắt nạt trên không gian mạng.</p>
+        </div>
+
+        <div class="problem-box">
+          <ul class="problem-list">
+            <li class="problem-item">
+              <span class="problem-bullet">1</span>
+              <div>
+                <strong>Tâm lý e ngại và im lặng kéo dài:</strong> Nhiều học sinh và người chứng kiến sợ bị trả thù hoặc kỳ thị nên không dám lên tiếng chia sẻ với thầy cô và gia đình.
+              </div>
+            </li>
+            <li class="problem-item">
+              <span class="problem-bullet">2</span>
+              <div>
+                <strong>Thiếu kênh tiếp nhận thông tin an toàn, bảo mật:</strong> Phụ huynh và nhà trường thường chỉ phát hiện sự việc khi hậu quả nghiêm trọng đã xảy ra do thiếu công cụ cảnh báo sớm.
+              </div>
+            </li>
+            <li class="problem-item">
+              <span class="problem-bullet">3</span>
+              <div>
+                <strong>Áp lực từ bạo lực ngôn từ và mạng xã hội:</strong> Các hành vi tẩy chay, chế giễu trực tuyến diễn ra âm thầm nhưng gây tổn thương tâm lý sâu sắc cho người bị hại.
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         3. THE OFFER / FEATURES (3 THẺ KHỐI CARDS)
+         ====================================================================== -->
+    <section id="giai-phap">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Giải Pháp Toàn Diện Cho Mọi Đối Tượng</h2>
+          <p class="section-desc">Ba trụ cột hành động thiết thực giúp bất kỳ ai cũng có thể tham gia bảo vệ môi trường giáo dục.</p>
+        </div>
+
+        <div class="cards-grid">
+          <!-- Card 1 -->
+          <article class="feature-card">
+            <span class="card-tag">Trụ cột 01</span>
+            <h3 class="card-title">Kênh Lên Tiếng &amp; Hỗ Trợ Ẩn Danh</h3>
+            <p class="card-text">
+              Cung cấp đường dây tiếp nhận phản ánh bảo mật tuyệt đối, giúp học sinh, phụ huynh và người dân gửi cảnh báo sớm để chuyên gia tâm lý can thiệp kịp thời.
+            </p>
+          </article>
+
+          <!-- Card 2 -->
+          <article class="feature-card">
+            <span class="card-tag">Trụ cột 02</span>
+            <h3 class="card-title">Cẩm Nang Kỹ Năng &amp; Nhận Diện Sớm</h3>
+            <p class="card-text">
+              Hệ thống tài liệu trực quan hướng dẫn cách nhận biết dấu hiệu tổn thương tâm lý, kỹ năng tự bảo vệ và phương pháp giao tiếp tích cực không bạo lực.
+            </p>
+          </article>
+
+          <!-- Card 3 -->
+          <article class="feature-card">
+            <span class="card-tag">Trụ cột 03</span>
+            <h3 class="card-title">Mạng Lưới Kết Nối Gia Đình - Nhà Trường</h3>
+            <p class="card-text">
+              Đồng bộ quy trình phối hợp giữa giáo viên, phụ huynh và chuyên gia tư vấn nhằm xử lý tận gốc mâu thuẫn, đồng thời phục hồi tinh thần cho người bị ảnh hưởng.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         4. SOCIAL PROOF (3 CON SỐ THỐNG KÊ / NHẬN XÉT)
+         ====================================================================== -->
+    <section id="tac-dong" class="section-alt">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Hiệu Quả Thực Tế Từ Cộng Đồng Đồng Hành</h2>
+          <p class="section-desc">Mỗi hành động nhỏ đều tạo nên sự thay đổi bền vững cho thế hệ tương lai.</p>
+        </div>
+
+        <div class="proof-grid">
+          <!-- Thống kê 1 -->
+          <div class="proof-card">
+            <div class="stat-number">12.500+</div>
+            <div class="stat-label">Lượt tiếp cận tài liệu phòng ngừa</div>
+            <p class="stat-sub">Học sinh, phụ huynh và giáo viên chủ động trang bị kỹ năng ứng xử an toàn.</p>
+          </div>
+
+          <!-- Thống kê 2 -->
+          <div class="proof-card">
+            <div class="stat-number">98%</div>
+            <div class="stat-label">Trường hợp được lắng nghe &amp; kết nối</div>
+            <p class="stat-sub">Các phản ánh được chuyển tới chuyên gia tâm lý và bộ phận hỗ trợ trong 24 giờ.</p>
+          </div>
+
+          <!-- Nhận xét đại diện -->
+          <div class="proof-card">
+            <div class="stat-number">“An Tâm”</div>
+            <div class="stat-label">Chuyên gia Tâm lý Giáo dục</div>
+            <p class="stat-sub">“Khi người lớn biết lắng nghe không phán xét, học sinh sẽ không còn đơn độc trước bạo lực học đường.”</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         5. FAQ (4 CÂU HỎI THƯỜNG GẶP - MỖI CÂU 2-3 DÒNG)
+         ====================================================================== -->
+    <section id="hoi-dap">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Câu Hỏi Thường Gặp</h2>
+          <p class="section-desc">Giải đáp nhanh những thắc mắc phổ biến dành cho học sinh, phụ huynh và cộng đồng.</p>
+        </div>
+
+        <div class="faq-list">
+          <!-- FAQ 1 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>1. Ai có thể tham gia và sử dụng các nguồn lực tại đây?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Dự án dành cho tất cả mọi người: học sinh, sinh viên, phụ huynh, giáo viên và bất kỳ công dân nào quan tâm đến giáo dục. Mọi tài liệu hướng dẫn và kênh kết nối hỗ trợ đều hoàn toàn miễn phí và dễ tiếp cận.
+            </div>
+          </div>
+
+          <!-- FAQ 2 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>2. Thông tin khi gửi phản ánh hoặc cần tư vấn có được bảo mật không?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Mọi thông tin cá nhân và nội dung chia sẻ của bạn được bảo mật nghiêm ngặt theo nguyên tắc an toàn. Bạn hoàn toàn có thể lựa chọn hình thức gửi ẩn danh để bảo vệ bản thân và người liên quan.
+            </div>
+          </div>
+
+          <!-- FAQ 3 -->
+          <div class="faq-item">
+            <button type="button" class="faq-question">
+              <span>3. Tôi cần làm gì ngay khi chứng kiến một vụ việc bạo lực học đường?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Hãy ưu tiên đảm bảo an toàn cho bản thân, không cổ vũ hay chia sẻ video gây tổn thương lên mạng xã hội. Sau đó, hãy báo ngay cho giáo viên, người lớn đáng tin cậy hoặc gửi thông tin qua nút hành động trên trang này.
+            </div>
+          </div>
+
+          <!-- FAQ 4 -->
+          <div class="faq-item active">
+            <button type="button" class="faq-question">
+              <span>4. Phụ huynh và nhà trường có thể phối hợp triển khai như thế nào?</span>
+              <span class="faq-icon">+</span>
+            </button>
+            <div class="faq-answer">
+              Nhà trường và hội phụ huynh có thể đăng ký nhận bộ tài liệu truyền thông chuẩn hóa hoặc tổ chức các buổi tọa đàm kỹ năng. Đội ngũ điều phối sẽ hỗ trợ kịch bản và kết nối chuyên gia phù hợp với từng cấp học.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======================================================================
+         6. FINAL CTA & FOOTER
+         ====================================================================== -->
+    <section class="final-cta-section">
+      <div class="container">
+        <h2 class="final-cta-title">Đừng Im Lặng Trước Bạo Lực Học Đường</h2>
+        <p class="final-cta-desc">
+          Sự lên tiếng và đồng hành của bạn hôm nay chính là lá chắn vững chắc nhất bảo vệ tương lai của thế hệ trẻ.
+        </p>
+        <!-- NHẮC LẠI NÚT CTA CHÍNH DUY NHẤT -->
+        <button type="button" class="btn-cta open-cta-modal">
+          phong chong bao luc hoc duong, xay dung moi truong hoc tap lanh manh
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>DỰ ÁN PHÒNG CHỐNG BẠO LỰC HỌC ĐƯỜNG</h4>
+          <p>Chung tay kiến tạo môi trường giáo dục an toàn, tôn trọng và nhân văn cho tất cả mọi người.</p>
+        </div>
+        <div class="footer-col">
+          <h4>THÔNG TIN LIÊN HỆ</h4>
+          <p>Email hỗ trợ: hotro@phongchongbaoluchocduong.vn</p>
+          <p>Đường dây tư vấn &amp; bảo vệ trẻ em: 111 (Miễn phí 24/7)</p>
+          <p>Phạm vi hoạt động: Toàn quốc</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        © <span id="currentYear">2026</span> Dự án Phòng Chống Bạo Lực Học Đường. Bảo lưu mọi quyền.
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       CỬA SỔ TƯƠNG TÁC KHI BẤM NÚT CTA CHÍNH
+       ======================================================================== -->
+  <div class="modal-overlay" id="ctaModal" role="dialog" aria-modal="true" aria-labelledby="modalHeading">
+    <div class="modal-box">
+      <button type="button" class="modal-close" id="closeModal" aria-label="Đóng">×</button>
+      <h3 class="modal-title" id="modalHeading">Hành Động Vì Môi Trường Học Tập Lành Mạnh</h3>
+      <p style="font-size: 0.94rem; color: #555254; margin-bottom: 18px;">
+        Điền thông tin bên dưới để nhận bộ cẩm nang phòng chống bạo lực học đường hoặc gửi yêu cầu kết nối hỗ trợ bảo mật.
+      </p>
+      <form id="actionForm">
+        <div class="form-group">
+          <label for="userName">Họ và tên (Có thể để trống nếu muốn ẩn danh)</label>
+          <input type="text" id="userName" placeholder="Nhập tên của bạn hoặc ghi 'Ẩn danh'">
+        </div>
+        <div class="form-group">
+          <label for="userRole">Bạn tham gia với vai trò nào?</label>
+          <select id="userRole" required="">
+            <option value="hoc-sinh">Học sinh / Sinh viên</option>
+            <option value="phu-huynh">Phụ huynh</option>
+            <option value="giao-vien">Giáo viên / Cán bộ nhà trường</option>
+            <option value="cong-dong">Người dân / Tình nguyện viên cộng đồng</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="userContact">Email hoặc Số điện thoại nhận tài liệu / phản hồi</label>
+          <input type="text" id="userContact" required="" placeholder="Nhập email hoặc số điện thoại">
+        </div>
+        <div class="form-group">
+          <label for="userNote">Nội dung cần hỗ trợ hoặc cam kết hành động</label>
+          <textarea id="userNote" rows="3" placeholder="Chia sẻ ngắn gọn điều bạn quan tâm..."></textarea>
+        </div>
+        <button type="submit" class="btn-cta" style="width: 100%;">
+          Gửi Thông Tin &amp; Chung Tay Hành Động
+        </button>
+        <div class="form-feedback" id="formFeedback">
+          Cảm ơn bạn đã lên tiếng! Thông tin đã được ghi nhận an toàn. Trong trường hợp khẩn cấp, hãy gọi ngay tổng đài 111.
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- ========================================================================
+       JAVASCRIPT THUẦN (TƯƠNG TÁC MENU, FAQ ACCORDION, MODAL FORM)
+       ======================================================================== -->
+  <script>
+    (function () {
+      // 1. Cập nhật năm bản quyền tự động
+      document.getElementById('currentYear').textContent = new Date().getFullYear();
+
+      // 2. Toggle Menu trên thiết bị di động
+      const menuToggle = document.getElementById('menuToggle');
+      const navLinks = document.getElementById('navLinks');
+
+      menuToggle.addEventListener('click', function () {
+        navLinks.classList.toggle('open');
+      });
+
+      navLinks.querySelectorAll('a').forEach(function (link) {
+        link.addEventListener('click', function () {
+          navLinks.classList.remove('open');
+        });
+      });
+
+      // 3. FAQ Accordion (Đóng/Mở mượt mà)
+      const faqItems = document.querySelectorAll('.faq-item');
+      faqItems.forEach(function (item) {
+        const btn = item.querySelector('.faq-question');
+        btn.addEventListener('click', function () {
+          const isOpen = item.classList.contains('active');
+          faqItems.forEach(function (i) {
+            i.classList.remove('active');
+          });
+          if (!isOpen) {
+            item.classList.add('active');
+          }
+        });
+      });
+
+      // 4. Mở / Đóng Modal khi người dùng nhấn nút CTA chính
+      const ctaModal = document.getElementById('ctaModal');
+      const openBtns = document.querySelectorAll('.open-cta-modal');
+      const closeModalBtn = document.getElementById('closeModal');
+      const actionForm = document.getElementById('actionForm');
+      const formFeedback = document.getElementById('formFeedback');
+
+      openBtns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          ctaModal.classList.add('open');
+        });
+      });
+
+      closeModalBtn.addEventListener('click', function () {
+        ctaModal.classList.remove('open');
+      });
+
+      ctaModal.addEventListener('click', function (e) {
+        if (e.target === ctaModal) {
+          ctaModal.classList.remove('open');
+        }
+      });
+
+      // 5. Xử lý gửi biểu mẫu trực tiếp trên trình duyệt
+      actionForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        formFeedback.style.display = 'block';
+        actionForm.reset();
+      });
+    })();
+  </script>
+
+</body></html>
